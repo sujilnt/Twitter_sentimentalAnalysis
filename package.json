@@ -29,5 +29,10 @@
     "webpack": "v3.10.0",
     "webpack-dev-server": "^2.4.5"
   },
-  "repository": "https://github.com/sujilnt/jsboilerplate.git"
+  "repository": "https://github.com/sujilnt/jsboilerplate.git",
+  "dependencies": {
+    "json-loader": "^0.5.7",
+    "tunnel-agent": "^0.6.0",
+    "twitter": "^1.7.1"
+  }
 }

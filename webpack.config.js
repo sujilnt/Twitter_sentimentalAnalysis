@@ -13,11 +13,17 @@ const CleanPlugin = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const { extract } = ExtractTextPlugin;
+const nodeObj = {
+    console: true,
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
+};
 
 
 // Context.
 config.context = src;
-
+config.node= nodeObj;
 
 // Entry.
 config.entry = ['./styles/index.scss', './index.js'];
@@ -27,11 +33,14 @@ config.entry = ['./styles/index.scss', './index.js'];
 config.module.rules = [{
     test: /\.js$/,
     exclude: exclude,
-    loader: 'babel-loader',
+    use: 'babel-loader',
+},{
+    test: /\.json$/,
+    use: 'json-loader'
 }, {
     test: /\.(scss)$/,
     loader: extract({
-        loader: 'css-loader!postcss-loader!sass-loader'
+        use: 'css-loader!postcss-loader!sass-loader'
     }),
 }];
 
@@ -44,6 +53,7 @@ config.output = {
 
 const devconfiguration = {
     host: '127.0.0.1',
+    historyApiFallback: true,
     disableHostCheck: true
 };
 
@@ -56,5 +66,6 @@ module.exports = env => {
         new ExtractTextPlugin('style.css'),
     ];
     config.devServer=devconfiguration;
+
     return config;
 }
