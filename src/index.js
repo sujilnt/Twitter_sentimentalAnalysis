@@ -33,5 +33,9 @@ clientkey.get('search/tweets', {q: 'node.js'}, function(error, tweets, response)
 
 // twit api
 
-let a ="successful ";
-console.log("adding a change",a );
+let bb ="successful ";
+console.log("adding a change",bb);
+console.log("adding a change",bb);
+console.log("adding a chages occured ",bb);
+
+

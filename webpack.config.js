@@ -54,6 +54,10 @@ config.output = {
 const devconfiguration = {
     host: '127.0.0.1',
     historyApiFallback: true,
+    overlay:true,
+    hot:true,
+    watch:true,
+    inline:true,
     disableHostCheck: true
 };
 
@@ -64,8 +68,8 @@ module.exports = env => {
         new CopyPlugin([{ context: './images', from: '**/*', to: dist + '/images' }]),
         new CopyPlugin([{ from: './index.html', to: dist }]),
         new ExtractTextPlugin('style.css'),
+
     ];
     config.devServer=devconfiguration;
-
     return config;
 }

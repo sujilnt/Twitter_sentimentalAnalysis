@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/webpack --env.production",
-    "dev": "yarn build && ./node_modules/.bin/webpack-dev-server --hot --inline --public http://127.0.0.1:8080"
+    "dev": "yarn build && ./node_modules/.bin/webpack-dev-server --hot --inline --public http://127.0.0.1:8080",
+    "dev-server": "node src/server/main.js"
   },
   "author": "Sujil Anto <sujilnt@gmail.com>",
   "license": "ISC",
@@ -31,8 +32,12 @@
   },
   "repository": "https://github.com/sujilnt/jsboilerplate.git",
   "dependencies": {
+    "babel-register": "^6.26.0",
+    "express": "^4.16.3",
     "json-loader": "^0.5.7",
     "tunnel-agent": "^0.6.0",
-    "twitter": "^1.7.1"
+    "twitter": "^1.7.1",
+    "webpack-dev-middleware": "v2.0.6",
+    "webpack-hot-middleware": "^2.22.2"
   }
 }

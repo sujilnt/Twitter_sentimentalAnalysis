@@ -1,0 +1,1 @@
+require("babel-register");require("./express");console.log("running the script !!");
