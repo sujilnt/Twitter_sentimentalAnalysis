@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/webpack --env.production",
-    "dev": "yarn build && ./node_modules/.bin/webpack-dev-server"
+    "dev": "yarn build && ./node_modules/.bin/webpack-dev-server --hot --inline --public http://127.0.0.1:8080"
   },
   "author": "Sujil Anto <sujilnt@gmail.com>",
   "license": "ISC",

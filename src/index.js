@@ -9,5 +9,12 @@ fetch(url)
         console.log('Request failed', error);
     });
 
+// using twitter api
+const Key="URn1hIjephCBThs2D9DMOo7XI";
+const consumersecretkey="4BFJSg4sL6NCtPFZ4lZx8zyazddahmUq7xOo4C0cJwtIrCSOPl";
+const accessToken ="897616760-ts1ZrKENT8PREFwBSbhdlvjEEjjUGadORuYBKnlN";
+const accessTokenSecret = "36uOUItjy5CS7RUtCrGNb2ZO56HLgDTPyza8Y9eiyQDWk";
+const twitterapi = " https://api.twitter.com/1.1/followers/ids.json?screen_name=katyperry";
+
 let a ="successful ";
 console.log("adding a change",a );

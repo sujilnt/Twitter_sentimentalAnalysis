@@ -42,6 +42,10 @@ config.output = {
     filename: 'script.js',
 };
 
+const devconfiguration = {
+    host: '127.0.0.1',
+    disableHostCheck: true
+};
 
 module.exports = env => {
     const shouldClean = env && env.production ? new CleanPlugin(['./dist']) : () => {};
@@ -51,5 +55,6 @@ module.exports = env => {
         new CopyPlugin([{ from: './index.html', to: dist }]),
         new ExtractTextPlugin('style.css'),
     ];
+    config.devServer=devconfiguration;
     return config;
 }
