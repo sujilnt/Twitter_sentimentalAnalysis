@@ -54,7 +54,9 @@ config.output = {
 const devconfiguration = {
     contentBase:"dist",
     historyApiFallback: true,
+    overlay:true,
     hot:true,
+    watch:true,
     inline:true,
     disableHostCheck: true
 };
