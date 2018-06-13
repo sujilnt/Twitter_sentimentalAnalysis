@@ -1,16 +1,5 @@
 import twitterdata from "./Api/test.js";
-
-let twitterdatadata= "do something ";
+import card from "./UIComponents/card.js";
 let bb ="successful server ";
-console.log("adding a change",twitterdatadata);
+console.log("adding a change");
 
-fetch('http://localhost:8080/test', {mode: 'cors'})
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(text) {
-        console.log('Request successful', text);
-    })
-    .catch(function(error) {
-        log('Request failed', error)
-    });
