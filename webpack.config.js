@@ -52,12 +52,9 @@ config.output = {
 };
 
 const devconfiguration = {
-    host: '127.0.0.1',
     contentBase:"dist",
     historyApiFallback: true,
-    overlay:true,
     hot:true,
-    watch:true,
     inline:true,
     disableHostCheck: true
 };

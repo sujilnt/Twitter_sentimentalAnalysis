@@ -2,7 +2,6 @@
 console.log("working !!!!");
 import TwitterApi from "twitter";
 var Twitter = require('twitter');
-console.log(Twitter);
 
 const newApiKey="810b0902cabf4fbaab29be8154f3bd93";
 const url  = `https://newsapi.org/v2/everything?q=brexit&apiKey=${newApiKey}`;
@@ -28,16 +27,10 @@ const clientkey= new TwitterApi({
     access_token_key: accessToken,
     access_token_secret: accessTokenSecret
 });
-console.log("testing ",clientkey);
-clientkey.get('search/tweets', {q: 'node.js'}, function(error, tweets, response) {
-    console.log(tweets);
-});
 
 // twit api
 
-let bb ="successful ";
+let bb ="successful server ";
 console.log("adding a change",bb);
-console.log("adding a change",bb);
-console.log("adding a chages occured ",bb);
 
 
