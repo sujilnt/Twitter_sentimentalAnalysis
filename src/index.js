@@ -1,3 +1,5 @@
+//import webpackhotplugin from "webpack-hot-middleware/client?reload=true";
+console.log("working !!!!");
 import TwitterApi from "twitter";
 var Twitter = require('twitter');
 console.log(Twitter);

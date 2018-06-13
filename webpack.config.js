@@ -53,6 +53,7 @@ config.output = {
 
 const devconfiguration = {
     host: '127.0.0.1',
+    contentBase:"dist",
     historyApiFallback: true,
     overlay:true,
     hot:true,
@@ -68,7 +69,7 @@ module.exports = env => {
         new CopyPlugin([{ context: './images', from: '**/*', to: dist + '/images' }]),
         new CopyPlugin([{ from: './index.html', to: dist }]),
         new ExtractTextPlugin('style.css'),
-
+        new webpack.HotModuleReplacementPlugin()
     ];
     config.devServer=devconfiguration;
     return config;
