@@ -39,6 +39,7 @@
     "tunnel-agent": "^0.6.0",
     "twitter": "^1.7.1",
     "webpack-dev-middleware": "v2.0.6",
-    "webpack-hot-middleware": "^2.22.2"
+    "webpack-hot-middleware": "^2.22.2",
+    "wink-sentiment": "^4.0.1"
   }
 }
