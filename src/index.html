@@ -8,14 +8,20 @@
     <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <span class="first">
-			Twitter `tweets` sentimental Analysis
-			<span class="icon-edit new"></span>
-    </span>
-    		<ul class="timeline" id="timelineCard">
-            </ul>
+<div class="flexContaier">
+    <div class="twitterContainer">
+        <span class="first">
+			    Twitter `tweets` sentimental Analysis
+			    <span class="icon-edit new"></span>
+        </span>
+        <ul class="timeline" id="timelineCard">
+        </ul>
+    </div>
+    <div class="svg_container">
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
 </div>
+
 
 <script src="./script.js"></script>
 </body>

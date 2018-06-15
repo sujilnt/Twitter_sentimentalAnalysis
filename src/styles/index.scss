@@ -17,15 +17,11 @@ body {
   line-height: 1.4em;
   padding: 20px;
   background-color: #ecf0f1;
-  position: relative;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  text-align: left;
-  display: inline-block;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
 }
+
 .bubble:hover > .over-bubble {
   opacity: 1;
 }
@@ -56,6 +52,7 @@ body {
   width: 560px;
   display: block;
   margin: auto;
+  padding:0;
   background-color: #dde1e2;
   padding-bottom: 2em;
   -webkit-box-shadow: #bdc3c7 0 5px 5px;
@@ -73,7 +70,7 @@ body {
   padding: 1em 0;
 }
 .timeline li:nth-child(even) {
-  background-color: #d3d7d8;
+  background-color: #afb6bd;
 }
 
 .avatar {
@@ -141,7 +138,6 @@ body {
   padding: 1em 0 !important;
   color: white;
   text-align: center;
-  margin-top: 1em;
   font-family: "Lato";
   font-size: 1.6em;
   -moz-border-radius-topleft: 8px;
@@ -277,6 +273,8 @@ h3 {
   display: inline-block;
   margin-bottom: 0.2em;
   color: #95a5a6;
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 .retweet {
@@ -300,4 +298,43 @@ h3 {
   width: 100%;
   display: block;
   font-size: 1.2em;
+}
+.svg_container{
+  display: block;
+  width: 434px;
+  height: 461px;
+  margin: 13px 0px;
+
+}
+li{
+  list-style-type: none;
+}
+.flexContaier{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.twitterContainer,
+.first,.bubble{
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+.twitterContainer{
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+}
+.sentimentScore{
+  position: absolute;
+  top: 0;
+  padding: 9px;
+  right: 0;
+  font-size: 14px;
+  color: #3498db;
+  font-weight: bold;
+  background: #00BCD4;
+  color: white;
+  border-bottom-left-radius: 4px;
+  text-transform: capitalize;
+  font-weight: bolder;
 }
