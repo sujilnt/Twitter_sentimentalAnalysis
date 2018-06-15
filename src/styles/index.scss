@@ -338,3 +338,13 @@ border-top-right-radius: 8px;
   text-transform: capitalize;
   font-weight: bolder;
 }
+.boom{
+  padding: 39px 0;
+  font-size: 17px;
+  font-weight: bold;
+  position: relative;
+  overflow:hidden;
+}
+.boom div{
+  display:flex;
+}
