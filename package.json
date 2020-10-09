@@ -28,7 +28,7 @@
     "postcss-reporter": "^3.0.0",
     "sass-loader": "^6.0.5",
     "webpack": "v3.10.0",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-server": "^3.1.11"
   },
   "repository": "https://github.com/sujilnt/jsboilerplate.git",
   "dependencies": {
